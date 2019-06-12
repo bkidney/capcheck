@@ -1,0 +1,19 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804f38500 [shape=record,label="{external node}"];
+	Node0x804f38500 -> Node0x804f38590;
+	Node0x804f38500 -> Node0x804f385f0;
+	Node0x804f38500 -> Node0x804f38650;
+	Node0x804f38500 -> Node0x804f386b0;
+	Node0x804f38500 -> Node0x804f38710;
+	Node0x804f38500 -> Node0x804f38770;
+	Node0x804f38500 -> Node0x804f387d0;
+	Node0x804f38590 [shape=record,label="{_citrus_mapper_none_mapper_init}"];
+	Node0x804f385f0 [shape=record,label="{_citrus_mapper_none_mapper_uninit}"];
+	Node0x804f38650 [shape=record,label="{_citrus_mapper_none_mapper_convert}"];
+	Node0x804f386b0 [shape=record,label="{_citrus_mapper_none_mapper_init_state}"];
+	Node0x804f38710 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804f38770 [shape=record,label="{_citrus_mapper_none_mapper_getops}"];
+	Node0x804f387d0 [shape=record,label="{llvm.memcpy.p0i8.p0i8.i64}"];
+}

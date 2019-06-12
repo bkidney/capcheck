@@ -1,0 +1,41 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804f77330 [shape=record,label="{external node}"];
+	Node0x804f77330 -> Node0x804f773c0;
+	Node0x804f77330 -> Node0x804f77420;
+	Node0x804f77330 -> Node0x804f77600;
+	Node0x804f77330 -> Node0x804f77660;
+	Node0x804f77330 -> Node0x804f776c0;
+	Node0x804f77330 -> Node0x804f77480;
+	Node0x804f77330 -> Node0x804f774e0;
+	Node0x804f77330 -> Node0x804f77540;
+	Node0x804f77330 -> Node0x804f775a0;
+	Node0x804f77330 -> Node0x804f77720;
+	Node0x804f77330 -> Node0x804f77780;
+	Node0x804f77330 -> Node0x804f777e0;
+	Node0x804f773c0 [shape=record,label="{fingerprint}"];
+	Node0x804f77420 [shape=record,label="{protohandlerout}"];
+	Node0x804f77420 -> Node0x804f77480;
+	Node0x804f77420 -> Node0x804f774e0;
+	Node0x804f77420 -> Node0x804f77540;
+	Node0x804f77420 -> Node0x804f775a0;
+	Node0x804f77600 [shape=record,label="{protohandlerin}"];
+	Node0x804f77660 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804f776c0 [shape=record,label="{llvm.bswap.i16}"];
+	Node0x804f77480 [shape=record,label="{GetAliasAddress}"];
+	Node0x804f77480 -> Node0x804f77360;
+	Node0x804f774e0 [shape=record,label="{GetDestAddress}"];
+	Node0x804f774e0 -> Node0x804f77360;
+	Node0x804f77540 [shape=record,label="{FindUdpTcpOut}"];
+	Node0x804f77540 -> Node0x804f77360;
+	Node0x804f775a0 [shape=record,label="{PunchFWHole}"];
+	Node0x804f775a0 -> Node0x804f77360;
+	Node0x804f77720 [shape=record,label="{mod_handler}"];
+	Node0x804f77720 -> Node0x804f77780;
+	Node0x804f77720 -> Node0x804f777e0;
+	Node0x804f77780 [shape=record,label="{LibAliasAttachHandlers}"];
+	Node0x804f77780 -> Node0x804f77360;
+	Node0x804f777e0 [shape=record,label="{LibAliasDetachHandlers}"];
+	Node0x804f777e0 -> Node0x804f77360;
+}

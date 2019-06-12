@@ -1,0 +1,27 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804f389b0 [shape=record,label="{external node}"];
+	Node0x804f389b0 -> Node0x804f38a40;
+	Node0x804f389b0 -> Node0x804f38c20;
+	Node0x804f389b0 -> Node0x804f38aa0;
+	Node0x804f389b0 -> Node0x804f38b00;
+	Node0x804f389b0 -> Node0x804f38b60;
+	Node0x804f389b0 -> Node0x804f38bc0;
+	Node0x804f389b0 -> Node0x804f38c80;
+	Node0x804f38a40 [shape=record,label="{pam_sm_authenticate}"];
+	Node0x804f38a40 -> Node0x804f38aa0;
+	Node0x804f38a40 -> Node0x804f38b00;
+	Node0x804f38a40 -> Node0x804f38b60;
+	Node0x804f38a40 -> Node0x804f38bc0;
+	Node0x804f38c20 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804f38aa0 [shape=record,label="{getuid}"];
+	Node0x804f38aa0 -> Node0x804f389e0;
+	Node0x804f38b00 [shape=record,label="{openpam_get_option}"];
+	Node0x804f38b00 -> Node0x804f389e0;
+	Node0x804f38b60 [shape=record,label="{pam_error}"];
+	Node0x804f38b60 -> Node0x804f389e0;
+	Node0x804f38bc0 [shape=record,label="{_openpam_log}"];
+	Node0x804f38bc0 -> Node0x804f389e0;
+	Node0x804f38c80 [shape=record,label="{pam_sm_setcred}"];
+}

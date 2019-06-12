@@ -1,0 +1,43 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804f86020 [shape=record,label="{external node}"];
+	Node0x804f86020 -> Node0x804f860b0;
+	Node0x804f86020 -> Node0x804f86110;
+	Node0x804f86020 -> Node0x804f862f0;
+	Node0x804f86020 -> Node0x804f86350;
+	Node0x804f86020 -> Node0x804f86170;
+	Node0x804f86020 -> Node0x804f861d0;
+	Node0x804f86020 -> Node0x804f86230;
+	Node0x804f86020 -> Node0x804f86290;
+	Node0x804f86020 -> Node0x804f863b0;
+	Node0x804f86020 -> Node0x804f86410;
+	Node0x804f86020 -> Node0x804f86470;
+	Node0x804f860b0 [shape=record,label="{fingerprint}"];
+	Node0x804f86110 [shape=record,label="{protohandler}"];
+	Node0x804f86110 -> Node0x804f86170;
+	Node0x804f86110 -> Node0x804f861d0;
+	Node0x804f86110 -> Node0x804f86230;
+	Node0x804f86110 -> Node0x804f861d0;
+	Node0x804f86110 -> Node0x804f86290;
+	Node0x804f86110 -> Node0x804f86170;
+	Node0x804f86110 -> Node0x804f86230;
+	Node0x804f86110 -> Node0x804f861d0;
+	Node0x804f862f0 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804f86350 [shape=record,label="{llvm.bswap.i16}"];
+	Node0x804f86170 [shape=record,label="{GetAliasAddress}"];
+	Node0x804f86170 -> Node0x804f86050;
+	Node0x804f861d0 [shape=record,label="{TcpChecksum}"];
+	Node0x804f861d0 -> Node0x804f86050;
+	Node0x804f86230 [shape=record,label="{GetAliasPort}"];
+	Node0x804f86230 -> Node0x804f86050;
+	Node0x804f86290 [shape=record,label="{FindUdpTcpOut}"];
+	Node0x804f86290 -> Node0x804f86050;
+	Node0x804f863b0 [shape=record,label="{mod_handler}"];
+	Node0x804f863b0 -> Node0x804f86410;
+	Node0x804f863b0 -> Node0x804f86470;
+	Node0x804f86410 [shape=record,label="{LibAliasAttachHandlers}"];
+	Node0x804f86410 -> Node0x804f86050;
+	Node0x804f86470 [shape=record,label="{LibAliasDetachHandlers}"];
+	Node0x804f86470 -> Node0x804f86050;
+}

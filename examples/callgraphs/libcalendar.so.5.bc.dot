@@ -1,0 +1,38 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804f6cd40 [shape=record,label="{external node}"];
+	Node0x804f6cd40 -> Node0x804f6cdd0;
+	Node0x804f6cd40 -> Node0x804f6ce30;
+	Node0x804f6cd40 -> Node0x804f6ce90;
+	Node0x804f6cd40 -> Node0x804f6cef0;
+	Node0x804f6cd40 -> Node0x804f6cf50;
+	Node0x804f6cd40 -> Node0x804f6cfb0;
+	Node0x804f6cd40 -> Node0x804f6d010;
+	Node0x804f6cd40 -> Node0x804f6d070;
+	Node0x804f6cd40 -> Node0x804f6d0d0;
+	Node0x804f6cd40 -> Node0x804f6d130;
+	Node0x804f6cd40 -> Node0x804f6d190;
+	Node0x804f6cd40 -> Node0x804f6d1f0;
+	Node0x804f6cd40 -> Node0x804f6d250;
+	Node0x804f6cdd0 [shape=record,label="{jdate}"];
+	Node0x804f6ce30 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804f6ce90 [shape=record,label="{ndaysj}"];
+	Node0x804f6cef0 [shape=record,label="{gdate}"];
+	Node0x804f6cf50 [shape=record,label="{ndaysg}"];
+	Node0x804f6cfb0 [shape=record,label="{week}"];
+	Node0x804f6cfb0 -> Node0x804f6cef0;
+	Node0x804f6d010 [shape=record,label="{llvm.lifetime.start.p0i8}"];
+	Node0x804f6d070 [shape=record,label="{llvm.lifetime.end.p0i8}"];
+	Node0x804f6d0d0 [shape=record,label="{weekday}"];
+	Node0x804f6d130 [shape=record,label="{easterg}"];
+	Node0x804f6d190 [shape=record,label="{easterog}"];
+	Node0x804f6d190 -> Node0x804f6ce90;
+	Node0x804f6d190 -> Node0x804f6d0d0;
+	Node0x804f6d190 -> Node0x804f6cef0;
+	Node0x804f6d1f0 [shape=record,label="{llvm.dbg.declare}"];
+	Node0x804f6d250 [shape=record,label="{easteroj}"];
+	Node0x804f6d250 -> Node0x804f6ce90;
+	Node0x804f6d250 -> Node0x804f6d0d0;
+	Node0x804f6d250 -> Node0x804f6cdd0;
+}

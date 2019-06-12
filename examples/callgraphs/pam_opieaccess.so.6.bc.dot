@@ -1,0 +1,45 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804f39250 [shape=record,label="{external node}"];
+	Node0x804f39250 -> Node0x804f392e0;
+	Node0x804f39250 -> Node0x804f395e0;
+	Node0x804f39250 -> Node0x804f39640;
+	Node0x804f39250 -> Node0x804f39340;
+	Node0x804f39250 -> Node0x804f393a0;
+	Node0x804f39250 -> Node0x804f39400;
+	Node0x804f39250 -> Node0x804f39460;
+	Node0x804f39250 -> Node0x804f394c0;
+	Node0x804f39250 -> Node0x804f39520;
+	Node0x804f39250 -> Node0x804f39580;
+	Node0x804f39250 -> Node0x804f396a0;
+	Node0x804f39250 -> Node0x804f39700;
+	Node0x804f392e0 [shape=record,label="{pam_sm_authenticate}"];
+	Node0x804f392e0 -> Node0x804f39340;
+	Node0x804f392e0 -> Node0x804f393a0;
+	Node0x804f392e0 -> Node0x804f39400;
+	Node0x804f392e0 -> Node0x804f39340;
+	Node0x804f392e0 -> Node0x804f39460;
+	Node0x804f392e0 -> Node0x804f394c0;
+	Node0x804f392e0 -> Node0x804f39520;
+	Node0x804f392e0 -> Node0x804f39460;
+	Node0x804f392e0 -> Node0x804f39580;
+	Node0x804f395e0 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804f39640 [shape=record,label="{llvm.lifetime.start.p0i8}"];
+	Node0x804f39340 [shape=record,label="{pam_get_item}"];
+	Node0x804f39340 -> Node0x804f39280;
+	Node0x804f393a0 [shape=record,label="{getpwnam}"];
+	Node0x804f393a0 -> Node0x804f39280;
+	Node0x804f39400 [shape=record,label="{opielookup}"];
+	Node0x804f39400 -> Node0x804f39280;
+	Node0x804f39460 [shape=record,label="{openpam_get_option}"];
+	Node0x804f39460 -> Node0x804f39280;
+	Node0x804f394c0 [shape=record,label="{opieaccessfile}"];
+	Node0x804f394c0 -> Node0x804f39280;
+	Node0x804f39520 [shape=record,label="{opiealways}"];
+	Node0x804f39520 -> Node0x804f39280;
+	Node0x804f39580 [shape=record,label="{pam_error}"];
+	Node0x804f39580 -> Node0x804f39280;
+	Node0x804f396a0 [shape=record,label="{llvm.lifetime.end.p0i8}"];
+	Node0x804f39700 [shape=record,label="{pam_sm_setcred}"];
+}

@@ -1,0 +1,47 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804f39460 [shape=record,label="{external node}"];
+	Node0x804f39460 -> Node0x804f394f0;
+	Node0x804f39460 -> Node0x804f39850;
+	Node0x804f39460 -> Node0x804f398b0;
+	Node0x804f39460 -> Node0x804f39550;
+	Node0x804f39460 -> Node0x804f395b0;
+	Node0x804f39460 -> Node0x804f39610;
+	Node0x804f39460 -> Node0x804f39670;
+	Node0x804f39460 -> Node0x804f396d0;
+	Node0x804f39460 -> Node0x804f39730;
+	Node0x804f39460 -> Node0x804f39790;
+	Node0x804f39460 -> Node0x804f397f0;
+	Node0x804f39460 -> Node0x804f39910;
+	Node0x804f394f0 [shape=record,label="{pam_sm_acct_mgmt}"];
+	Node0x804f394f0 -> Node0x804f39550;
+	Node0x804f394f0 -> Node0x804f395b0;
+	Node0x804f394f0 -> Node0x804f39610;
+	Node0x804f394f0 -> Node0x804f39670;
+	Node0x804f394f0 -> Node0x804f39610;
+	Node0x804f394f0 -> Node0x804f396d0;
+	Node0x804f394f0 -> Node0x804f39610;
+	Node0x804f394f0 -> Node0x804f39730;
+	Node0x804f394f0 -> Node0x804f39790;
+	Node0x804f394f0 -> Node0x804f397f0;
+	Node0x804f39850 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804f398b0 [shape=record,label="{llvm.lifetime.start.p0i8}"];
+	Node0x804f39550 [shape=record,label="{pam_get_user}"];
+	Node0x804f39550 -> Node0x804f39490;
+	Node0x804f395b0 [shape=record,label="{getpwnam}"];
+	Node0x804f395b0 -> Node0x804f39490;
+	Node0x804f39610 [shape=record,label="{_openpam_log}"];
+	Node0x804f39610 -> Node0x804f39490;
+	Node0x804f39670 [shape=record,label="{pam_get_item}"];
+	Node0x804f39670 -> Node0x804f39490;
+	Node0x804f396d0 [shape=record,label="{strncmp}"];
+	Node0x804f396d0 -> Node0x804f39490;
+	Node0x804f39730 [shape=record,label="{getttynam}"];
+	Node0x804f39730 -> Node0x804f39490;
+	Node0x804f39790 [shape=record,label="{openpam_get_option}"];
+	Node0x804f39790 -> Node0x804f39490;
+	Node0x804f397f0 [shape=record,label="{pam_error}"];
+	Node0x804f397f0 -> Node0x804f39490;
+	Node0x804f39910 [shape=record,label="{llvm.lifetime.end.p0i8}"];
+}

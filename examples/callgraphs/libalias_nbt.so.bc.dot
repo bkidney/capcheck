@@ -1,0 +1,45 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x804fc2a10 [shape=record,label="{external node}"];
+	Node0x804fc2a10 -> Node0x804fc2aa0;
+	Node0x804fc2a10 -> Node0x804fc2b00;
+	Node0x804fc2a10 -> Node0x804fc2b60;
+	Node0x804fc2a10 -> Node0x804fc2bc0;
+	Node0x804fc2a10 -> Node0x804fc2c80;
+	Node0x804fc2a10 -> Node0x804fc2ce0;
+	Node0x804fc2a10 -> Node0x804fc2da0;
+	Node0x804fc2a10 -> Node0x804fc2e00;
+	Node0x804fc2a10 -> Node0x804fc2ec0;
+	Node0x804fc2a10 -> Node0x804fc2e60;
+	Node0x804fc2a10 -> Node0x804fc2f20;
+	Node0x804fc2a10 -> Node0x804fc2f80;
+	Node0x804fc2a10 -> Node0x804fc2fe0;
+	Node0x804fc2aa0 [shape=record,label="{fingerprint1}"];
+	Node0x804fc2b00 [shape=record,label="{protohandler1}"];
+	Node0x804fc2b60 [shape=record,label="{fingerprint2}"];
+	Node0x804fc2bc0 [shape=record,label="{protohandler2in}"];
+	Node0x804fc2bc0 -> Node0x804fc2c20;
+	Node0x804fc2c80 [shape=record,label="{protohandler2out}"];
+	Node0x804fc2c80 -> Node0x804fc2c20;
+	Node0x804fc2ce0 [shape=record,label="{llvm.dbg.value}"];
+	Node0x804fc2c20 [shape=record,label="{AliasHandleUdpNbtNS}"];
+	Node0x804fc2c20 -> Node0x804fc2d40;
+	Node0x804fc2c20 -> Node0x804fc2d40;
+	Node0x804fc2c20 -> Node0x804fc2d40;
+	Node0x804fc2da0 [shape=record,label="{llvm.lifetime.start.p0i8}"];
+	Node0x804fc2e00 [shape=record,label="{llvm.bswap.i16}"];
+	Node0x804fc2d40 [shape=record,label="{AliasHandleResource}"];
+	Node0x804fc2d40 -> Node0x804fc2e60;
+	Node0x804fc2d40 -> Node0x804fc2e60;
+	Node0x804fc2ec0 [shape=record,label="{llvm.lifetime.end.p0i8}"];
+	Node0x804fc2e60 [shape=record,label="{bcmp}"];
+	Node0x804fc2e60 -> Node0x804fc2a40;
+	Node0x804fc2f20 [shape=record,label="{mod_handler}"];
+	Node0x804fc2f20 -> Node0x804fc2f80;
+	Node0x804fc2f20 -> Node0x804fc2fe0;
+	Node0x804fc2f80 [shape=record,label="{LibAliasAttachHandlers}"];
+	Node0x804fc2f80 -> Node0x804fc2a40;
+	Node0x804fc2fe0 [shape=record,label="{LibAliasDetachHandlers}"];
+	Node0x804fc2fe0 -> Node0x804fc2a40;
+}
