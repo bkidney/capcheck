@@ -14,6 +14,8 @@ with open(fbsd_dir + "/sys/kern/capabilities.conf") as cap:
     for line in cap:
         if (not re.match('^[#\s]', line)):
             allowed.add(line.strip())
+            if line.strip().startswith("sys_"):
+                allowed.add(line.strip()[4:])
 
 with open(fbsd_dir + "/sys/kern/syscalls.c") as calls:
     for line in calls:
@@ -25,20 +27,13 @@ with open(fbsd_dir + "/sys/kern/syscalls.c") as calls:
 
 disallowed = all - allowed
 
+# Hack to deal with libc aliasing syscalls
+aliases = Set()
+for fn in disallowed:
+    fn = "_" + fn
+    aliases.add(fn)
+disallowed = disallowed.union(aliases)
+
 for call in disallowed:
     print(call)
 
-# elfdata = subprocess.check_output(['readelf', '-s', binary])
-# elfdata = elfdata.split('\n')
-
-# fns = []
-# for line in elfdata:
-#     if len(line.split()) > 8:
-#         fn, lib = line.split()[7].split('@')
-
-#         if (lib.startswith("FBSD")):
-#             fns.append(fn)
-
-# fns = list(dict.fromkeys(fns))
-
-# print(fns)
