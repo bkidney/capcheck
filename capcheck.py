@@ -20,7 +20,6 @@ for line in elfdata:
             fns.append(fn)
 
 fns = list(dict.fromkeys(fns))
-print(fns)
 
 ldd_data = subprocess.check_output(['ldd', binary])
 ldd_data = ldd_data.split('\n')
