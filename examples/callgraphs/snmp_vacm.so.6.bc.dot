@@ -298,3 +298,4 @@ digraph "Call graph" {
 	Node0x804f9a290 [shape=record,label="{vacm_delete_view}"];
 	Node0x804f9a290 -> Node0x804f990f0;
 }
+

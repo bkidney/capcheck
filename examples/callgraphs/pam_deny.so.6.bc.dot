@@ -25,3 +25,4 @@ digraph "Call graph" {
 	Node0x804f38b30 [shape=record,label="{pam_sm_open_session}"];
 	Node0x804f38b90 [shape=record,label="{pam_sm_close_session}"];
 }
+

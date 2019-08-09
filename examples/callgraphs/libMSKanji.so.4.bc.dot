@@ -52,3 +52,4 @@ digraph "Call graph" {
 	Node0x804f91e40 [shape=record,label="{_citrus_MSKanji_stdenc_getops}"];
 	Node0x804f91ea0 [shape=record,label="{llvm.memcpy.p0i8.p0i8.i64}"];
 }
+

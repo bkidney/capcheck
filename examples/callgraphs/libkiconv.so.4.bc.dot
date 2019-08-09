@@ -152,3 +152,4 @@ digraph "Call graph" {
 	Node0x804fb9530 [shape=record,label="{quirk_vendor2unix}"];
 	Node0x804fb95f0 [shape=record,label="{quirk_unix2vendor}"];
 }
+

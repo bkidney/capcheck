@@ -279,3 +279,4 @@ digraph "Call graph" {
 	Node0x804fc9e30 [shape=record,label="{heim_string_get_type_id}"];
 	Node0x804fc9e90 [shape=record,label="{heim_string_get_utf8}"];
 }
+

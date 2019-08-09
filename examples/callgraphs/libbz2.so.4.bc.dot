@@ -316,3 +316,4 @@ digraph "Call graph" {
 	Node0x805167d30 [shape=record,label="{BZ2_hbAssignCodes}"];
 	Node0x805167d90 [shape=record,label="{BZ2_hbCreateDecodeTables}"];
 }
+

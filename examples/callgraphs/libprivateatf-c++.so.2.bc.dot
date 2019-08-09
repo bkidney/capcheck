@@ -2185,3 +2185,4 @@ digraph "Call graph" {
 	Node0x8056cbbe0 [shape=record,label="{atf_utils_wait}"];
 	Node0x8056cbbe0 -> Node0x804f370f0;
 }
+

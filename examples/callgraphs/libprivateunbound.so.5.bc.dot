@@ -16852,3 +16852,4 @@ digraph "Call graph" {
 	Node0x805829280 [shape=record,label="{sldns_wire2str_alg_scan}"];
 	Node0x805829280 -> Node0x807282ec0;
 }
+
